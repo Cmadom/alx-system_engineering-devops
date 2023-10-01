@@ -1,20 +1,19 @@
 #!/usr/bin/env bash
-
 # This script is displaying "Best School" 10 times but prints different messages at certain points
 
 i=0
 
 while ((i < 10))
 do
-    ((i++))
-    
-    if [ $i -eq 4 ]
-    then
-        echo "bad luck"
-    elif [ $i -eq 8 ]
-    then
-        echo "good luck"
-    else
-        echo "Best School"
-    fi
+	((i++))
+	
+	if [ $i -eq 4 ]
+	then
+		echo "bad luck"
+	elif [ $i -eq 8 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
 done

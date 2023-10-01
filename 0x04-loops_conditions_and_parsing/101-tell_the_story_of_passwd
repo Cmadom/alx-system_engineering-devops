@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Write a Bash script that displays the content of the file /etc/passwd.
 # Your script should only display:
 # username
@@ -12,5 +11,5 @@
 IFS=':'
 
 while read -r usr pswd uid gid uinfo hd csh; do
-    echo "The user $usr has a user id of $uid and a home directory at $hd."
+	echo "The user $usr has a user id of $uid and a home directory at $hd."
 done < /etc/passwd
